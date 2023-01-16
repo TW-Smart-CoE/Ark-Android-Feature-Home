@@ -5,6 +5,8 @@ import com.thoughtworks.ark.androidLibrary
 plugins {
     alias(libs.plugins.library)
     alias(libs.plugins.kotlin)
+    alias(libs.plugins.kapt)
+    alias(libs.plugins.router)
     alias(libs.plugins.detekt)
 }
 
@@ -15,6 +17,9 @@ androidLibrary {
 }
 
 dependencies {
+    implementation(libs.router)
+    kapt(libs.router.compiler)
+
     testImplementation(libs.junit4)
     androidTestImplementation(libs.androidx.junit.ktx)
 
