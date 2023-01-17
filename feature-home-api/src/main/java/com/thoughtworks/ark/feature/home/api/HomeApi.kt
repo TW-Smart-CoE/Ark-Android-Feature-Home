@@ -5,5 +5,5 @@ import com.thoughtworks.ark.router.annotation.Service
 
 @Service
 interface HomeApi {
-    fun getHomeFragment(): Fragment
+    fun increaseHomeCount(homeFragment: Fragment)
 }

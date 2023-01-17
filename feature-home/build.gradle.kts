@@ -22,6 +22,7 @@ androidLibrary {
 
 dependencies {
     api(project(":feature-home-api"))
+    implementation("com.thoughtworks.ark:feature-dashboard-api:1.0-SNAPSHOT")
 
     implementation(libs.core.ktx)
     implementation(libs.material)
