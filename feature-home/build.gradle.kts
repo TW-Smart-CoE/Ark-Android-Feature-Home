@@ -1,6 +1,7 @@
 @file:Suppress("DSL_SCOPE_VIOLATION", "UnstableApiUsage")
 
 import com.thoughtworks.ark.androidLibrary
+import com.thoughtworks.ark.autoImplementation
 import com.thoughtworks.ark.enableCompose
 
 plugins {
@@ -22,7 +23,8 @@ androidLibrary {
 
 dependencies {
     api(project(":feature-home-api"))
-    implementation("com.thoughtworks.ark:feature-dashboard-api:1.0-SNAPSHOT")
+
+    autoImplementation("feature-dashboard-api", "1.0.0")
 
     implementation(libs.core.ktx)
     implementation(libs.material)
