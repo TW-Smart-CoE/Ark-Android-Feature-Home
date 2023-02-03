@@ -26,6 +26,8 @@ dependencies {
 
     autoImplementation("feature-dashboard-api", "1.0.0")
 
+    autoImplementation("ui", "1.0.0")
+
     implementation(libs.core.ktx)
     implementation(libs.material)
     implementation(libs.bundles.compose)
@@ -36,8 +38,6 @@ dependencies {
 
     implementation(libs.router)
     kapt(libs.router.compiler)
-
-    api(libs.ark.ui)
 
     testImplementation(libs.junit4)
 
